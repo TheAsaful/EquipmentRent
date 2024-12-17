@@ -1,0 +1,20 @@
+﻿<Window x:Class="EquipmentRent.AddEquipmentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EquipmentRent"
+        mc:Ignorable="d"
+         Title="Добавить/Обновить оборудование" Height="300" Width="400">
+    <Grid Margin="10">
+        <StackPanel>
+            <Label Content="Название:"/>
+            <TextBox x:Name="NameBox" />
+            <Label Content="Цена:"/>
+            <TextBox x:Name="PriceBox" />
+            <Label Content="ID Статуса:"/>
+            <TextBox x:Name="StatusBox" />
+            <Button Content="Сохранить" Click="Save_Click" Margin="0,10,0,0" />
+        </StackPanel>
+    </Grid>
+</Window>

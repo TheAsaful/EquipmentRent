@@ -1,0 +1,23 @@
+﻿<Window x:Class="EquipmentRent.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EquipmentRent"
+        mc:Ignorable="d"
+         Title="Оборудование" Height="450" Width="800">
+
+    <Grid>
+        <Button Name="AddButton" Content="Добавить" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Margin="0,10,10,0" Click="AddEquipment_Click"/>
+        <Button Name="DeleteButton" Content="Удалить" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Margin="0,40,10,0" Click="DeleteEquipment_Click"/>
+        <Button Name="RefreshButton" Content="Обновить страницу" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Margin="0,70,10,0" Click="UpdateEquipment_Click"/>
+
+        <DataGrid Name="EquipmentDataGrid" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="600" Height="300" AutoGenerateColumns="True" CanUserAddRows="False" SelectionMode="Single"  CellEditEnding="EquipmentDataGrid_CellEditEnding" SelectionUnit="FullRow">
+
+        </DataGrid>
+        <Label Content="1 - В наличии" HorizontalAlignment="Left" Margin="10,315,0,0" VerticalAlignment="Top"/>
+        <Label Content="2 - Не в наличии" HorizontalAlignment="Left" Margin="116,315,0,0" VerticalAlignment="Top"/>
+        <Label Content="3 - Удалить" HorizontalAlignment="Left" Margin="238,315,0,0" VerticalAlignment="Top"/>
+        <Label Content="4 - Не доступен" HorizontalAlignment="Left" Margin="329,315,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
